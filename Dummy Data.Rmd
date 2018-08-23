@@ -1,0 +1,49 @@
+---
+title: "Luke’s dummy data"
+author: "Luke Tuttle"
+date: "8/22/2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+```
+<!--mileage reimbursement is 0.545 dollars per mile--> 
+```{r dummy data set}
+read_csv("Idaho Map Dummy Sheet.csv")
+```
+
+```{r eval=FALSE}
+#This is just an alternative dummy data frame to reading in the dummy csv. With exception to the Moscow District they are identical.
+
+tibble(
+  District = c("Mountain View School District", 
+               "Mountain View School District", 
+               "Mountain View School District", 
+               "Orofino Joint School District",
+               "Orofino Joint School District",
+               "Orofino Joint School District"),
+  School = c("Clearwater Valley Elementary", 
+             "Elk City School", 
+             "Grangeville Elementary/Middle School",
+             "Cavendish-Taekean Elementary",
+             "Orofino Elementary",
+             "Peck Elementary"),
+  Elementary = c(TRUE, 
+                 FALSE, 
+                 TRUE, 
+                 TRUE, 
+                 TRUE, 
+                 TRUE),
+  Address = c("306 Pine Avenue, Kooskia, ID 83539",
+             "100 Road School Road, Elk City, ID 83525",
+             "400 South Idaho Ave., Grangeville, ID 83530",
+             "456 Middle Rd., Lenore, ID 83541",
+             "1000 Michigan Ave. Orofino, ID 83544",
+             "212 N. Main St Peck, ID 83545")
+  
+  
+)
+```
+
