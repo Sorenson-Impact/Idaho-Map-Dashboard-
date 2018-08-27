@@ -9,7 +9,13 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 library(tidyverse)
 ```
-<!--mileage reimbursement is 0.545 dollars per mile--> 
+<!--
+mileage reimbursement is 0.545 dollars per mile.
+primary start point: 
+Lee Pesky Learning Center
+3324 Elder St, Boise, ID 83705
+-->
+
 ```{r dummy data set}
 read_csv("Idaho Map Dummy Sheet.csv")
 ```
